@@ -1,0 +1,17 @@
+{
+	"$schema": "../node_modules/@companion-surface/base/assets/manifest.schema.json",
+	"type": "surface",
+	"id": "korg-nanokontrol2-surface",
+	"name": "KORG nanoKONTROL2 (surface)",
+	"shortname": "nanokontrol2-surface",
+	"description": "KORG nanoKONTROL2 as a Companion surface: buttons map to grid buttons, LEDs follow button colour, faders/knobs to variables",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/YOUR-GITHUB-USERNAME/companion-surface-korg-nanokontrol2.git",
+	"bugs": "https://github.com/YOUR-GITHUB-USERNAME/companion-surface-korg-nanokontrol2/issues",
+	"maintainers": [{ "name": "Radomir Rytych", "github": "rradomir" }],
+	"runtime": { "type": "node26", "apiVersion": "0.0.0", "entrypoint": "../dist/main.js" },
+	"keywords": ["korg", "nanokontrol2", "midi"],
+	"products": ["nanoKONTROL2"],
+	"usbIds": [{ "vendorId": 2372, "productIds": [279] }]
+}

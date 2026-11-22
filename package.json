@@ -1,0 +1,35 @@
+{
+	"name": "korg-nanokontrol2-surface",
+	"version": "0.3.3",
+	"main": "dist/main.js",
+	"type": "module",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YOUR-GITHUB-USERNAME/companion-surface-korg-nanokontrol2.git"
+	},
+	"scripts": {
+		"format": "prettier -w .",
+		"build": "rimraf dist && tsc -p tsconfig.build.json",
+		"dev": "tsc -p tsconfig.build.json --watch",
+		"package": "yarn build && companion-surface-build"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": "^26",
+		"yarn": "^4"
+	},
+	"dependencies": {
+		"@companion-surface/base": "~1.4.1",
+		"@julusian/midi": "^3.8.1"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^3.2.0",
+		"@types/node": "^26.0.0",
+		"prettier": "^3.8.0",
+		"rimraf": "^6.1.0",
+		"typescript": "~6.0.3"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"packageManager": "yarn@4.18.1"
+}
