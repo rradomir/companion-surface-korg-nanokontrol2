@@ -2,11 +2,23 @@
 
 A [Bitfocus Companion](https://bitfocus.io/companion) **surface module** for the **KORG nanoKONTROL2**.
 
+## Important note
+
+This is **pure vibecoded** package in Claude Code Opus 5.5. I tested it on real hardware, and tried my best in prompting, to have nice result. Remember: it is possible to use this device only by generic midi plugin, which companion already have. This package only introduces user-friendly layout over buttons page, with actions and feedbacks for LEDs. You don't need to think about midi channels, controls etc. Everything is ready to go.
+
+## Tested on:
+Companion 5.1.0 and 5.1.3
+Windows 11
+Mac mini M6 & macOS Golden Gate 27.2
+
+## Blank page included
+[`blank_nano_page.companionconfig`](blank_nano_page.companionconfig) is ready page to import, with buttons descriptions. Of course you can put there what you want - it is visible only on admin page. Yet I think it good enough to know where is what button mapped. Claude says it's impossible to include blank page in package you import into companion. That's why you need to do it manually. It was exported from Companion 5.1.3.
+
 - Buttons press the grid buttons of the page assigned to the surface.
 - Button LEDs follow the button background colour.
 - Faders and knobs send their values to custom variables (transfer variables), ready for triggers.
 
-Requires Companion **5.1** or newer.
+Requires Companion **5.1** or newer. This is version I tested it. Maybe it will work on earlier.
 
 ## Install
 
